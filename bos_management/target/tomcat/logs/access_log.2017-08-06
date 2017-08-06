@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [06/Aug/2017:00:00:11 +0800] "GET /bos_management/role_list.action HTTP/1.1" 200 347 http-bio-9001-exec-9 9
+0:0:0:0:0:0:0:1 - - [06/Aug/2017:00:02:07 +0800] "GET /bos_management/pages/system/userindex.html HTTP/1.1" 304 - http-bio-9001-exec-10 3
+0:0:0:0:0:0:0:1 - - [06/Aug/2017:00:02:07 +0800] "POST /bos_management/user_list.action HTTP/1.1" 200 574 http-bio-9001-exec-10 12
+0:0:0:0:0:0:0:1 - - [06/Aug/2017:00:02:09 +0800] "GET /bos_management/role_list.action HTTP/1.1" 200 277 http-bio-9001-exec-10 7
+0:0:0:0:0:0:0:1 - - [06/Aug/2017:00:02:11 +0800] "GET /bos_management/pages/system/userinfo.html HTTP/1.1" 200 4541 http-bio-9001-exec-10 2
+0:0:0:0:0:0:0:1 - - [06/Aug/2017:00:02:11 +0800] "GET /bos_management/role_list.action HTTP/1.1" 200 277 http-bio-9001-exec-10 6

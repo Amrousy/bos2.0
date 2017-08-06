@@ -1,0 +1,5 @@
+com\baidu\bos\base\test\StandardRepositoryTest.class
+com\baidu\bos\base\ElasticsearchTest.class
+com\baidu\bos\base\test\StandardSaveActionTest.class
+com\baidu\bos\base\test\CourierRepositoryTest.class
+com\baidu\bos\base\freemarkertest\FreemarkerTest.class

@@ -1,0 +1,2 @@
+com\baidu\bos\utils\SmsUtils.class
+com\baidu\bos\mq\SmsConsumer.class

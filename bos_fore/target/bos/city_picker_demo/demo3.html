@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>重置</title>
+		<!-- city-picker -->
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/self/city-picker.data.js"></script>
+		<script type="text/javascript" src="../js/self/city-picker.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/city-picker.css" />
+		<script type="text/javascript">
+			$(function() {
+				$("#area").citypicker();
+				$("#reset").click(function() {
+					$("#area").citypicker('reset');
+				})
+			});
+		</script>
+	</head>
+
+	<body>
+		<div style="position: relative;">
+			<input id="area" type="text" name="area" size="80" />
+			<input type="button" id="reset" value="重置" />
+		</div>
+	</body>
+
+</html>
