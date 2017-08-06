@@ -2,6 +2,7 @@ package com.baidu.bos.service.system.impl;
 
 import com.baidu.bos.dao.system.MenuRespository;
 import com.baidu.bos.domain.system.Menu;
+import com.baidu.bos.domain.system.User;
 import com.baidu.bos.service.system.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,5 +32,14 @@ public class MenuServiceImpl implements MenuService {
             menu.setParentMenu(null);
         }
         menuRespository.save(menu);
+    }
+
+    @Override
+    public List<Menu> findByUser(User user) {
+        if (user.getUsername().equals("admin")) {
+            return menuRespository.findAll();
+        } else {
+        return menuRespository.findByUser(user.getId());
+        }
     }
 }

@@ -1,9 +1,12 @@
 package com.baidu.bos.web.action.system;
 
 import com.baidu.bos.domain.system.Menu;
+import com.baidu.bos.domain.system.User;
 import com.baidu.bos.service.system.MenuService;
 import com.baidu.bos.web.action.common.BaseAction;
 import com.opensymphony.xwork2.ActionContext;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.ParentPackage;
@@ -39,4 +42,14 @@ public class MenuAction extends BaseAction<Menu> {
         return SUCCESS;
     }
 
+    @Action(value = "menu_showmenu", results = {@Result(name = "success", type = "json")})
+    public String showMenu() {
+        // 调用业务层查询所有的菜单
+        Subject subject = SecurityUtils.getSubject();
+        User user = (User) subject.getPrincipal();
+
+        List<Menu> menus= menuService.findByUser(user);
+        ActionContext.getContext().getValueStack().push(menus);
+        return SUCCESS;
+    }
 }
