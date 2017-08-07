@@ -13,6 +13,8 @@
           <element id="archive" name="bos_domain-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="bos_domain" />
           </element>
+          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.6.11" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-all:1.2.2" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-guice:1.2.2" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.2.2" />
@@ -38,7 +40,6 @@
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.10.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.12.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.9" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" />
           <element id="library" level="project" name="Maven: org.apache.activemq:activemq-all:5.15.0" />
           <element id="library" level="project" name="Maven: org.apache.struts:struts2-core:2.3.24" />

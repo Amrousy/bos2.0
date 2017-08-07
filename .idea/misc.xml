@@ -19,9 +19,9 @@
         <option value="$PROJECT_DIR$/bos_fore/pom.xml" />
         <option value="$PROJECT_DIR$/bos_domain/pom.xml" />
         <option value="$PROJECT_DIR$/crm_domain/pom.xml" />
-        <option value="$PROJECT_DIR$/common_parent/pom.xml" />
         <option value="$PROJECT_DIR$/bos_management/pom.xml" />
         <option value="$PROJECT_DIR$/crm_management/pom.xml" />
+        <option value="$PROJECT_DIR$/common_parent/pom.xml" />
       </list>
     </option>
   </component>
