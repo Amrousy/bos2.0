@@ -18,4 +18,6 @@ public interface WayBillService {
 
 	public Page<WayBill> findPageData(WayBill model, Pageable pageable);
 
+	// 定时任务更新索引库
+	public void syncIndex();
 }

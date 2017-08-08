@@ -10,6 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldIndex;
@@ -125,6 +126,7 @@ public class WayBill implements Serializable {
 		this.wayBillNum = wayBillNum;
 	}
 
+	@JsonIgnore
 	public Order getOrder() {
 		return order;
 	}
@@ -197,6 +199,7 @@ public class WayBill implements Serializable {
 		this.recCompany = recCompany;
 	}
 
+	@JsonIgnore
 	public Area getRecArea() {
 		return recArea;
 	}

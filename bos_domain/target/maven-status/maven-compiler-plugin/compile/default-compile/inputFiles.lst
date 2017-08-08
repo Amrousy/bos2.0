@@ -1,10 +1,13 @@
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\base\Archive.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\transit\DeliveryInfo.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\take_delivery\WayBill.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\take_delivery\WorkBill.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\transit\SignInfo.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\base\Area.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\system\Role.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\base\Courier.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\base\SubArea.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\transit\TransitInfo.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\take_delivery\Order.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\base\SubArchive.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\system\User.java
@@ -16,4 +19,5 @@ D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bo
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\constant\Constants.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\take_delivery\Promotion.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\base\Vehicle.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\transit\InOutStorageInfo.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\base\TakeTime.java

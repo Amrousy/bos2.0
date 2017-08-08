@@ -10,6 +10,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.struts2.json.annotations.JSON;
 
 /**
@@ -96,6 +97,7 @@ public class Area {
 	}
 
 	@JSON(serialize = false)
+	@JsonIgnore
 	public Set<SubArea> getSubareas() {
 		return subareas;
 	}

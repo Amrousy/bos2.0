@@ -42,7 +42,7 @@ public class CustomerAction extends BaseAction<Customer> {
 	public String sendSms() throws Exception {
 		// 手机号保存在Customer对象
 		// 生成短信验证码
-		String randomCode = RandomStringUtils.randomNumeric(4);
+		final String randomCode = RandomStringUtils.randomNumeric(4);
 		// 将短信验证码保存到session
 		ServletActionContext.getRequest().getSession().setAttribute(model.getTelephone(), randomCode);
 		System.out.println("生成的手机验证码为：" + randomCode);

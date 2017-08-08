@@ -8,18 +8,29 @@
         <property name="jobClass" value="com.baidu.bos.quartz.PromotionJob"/>
     </bean>
 
-    <bean id="simpleTrigger"
+    <bean id="syncIndexJob" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <property name="jobClass" value="com.baidu.bos.quartz.SyncIndexJob"/>
+    </bean>
+
+    <bean id="simpleTrigger1"
           class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
         <property name="jobDetail" ref="promotionJob"/>
         <property name="startDelay" value="0"/>
-        <property name="repeatInterval" value="60000"/>
+        <property name="repeatInterval" value="300000"/>
+    </bean>
+
+    <bean id="simpleTrigger2" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+        <property name="jobDetail" ref="syncIndexJob"/>
+        <property name="startDelay" value="0"/>
+        <property name="repeatInterval" value="300000"/>
     </bean>
 
     <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
         <property name="jobFactory" ref="jobFactory"/>
         <property name="triggers">
             <list>
-                <ref bean="simpleTrigger"/>
+                <ref bean="simpleTrigger1"/>
+                <ref bean="simpleTrigger2"/>
             </list>
         </property>
     </bean>

@@ -1,6 +1,7 @@
 package com.baidu.bos.service.take_delivery.impl;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.List;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -111,5 +112,14 @@ public class WayBillServiceImpl implements WayBillService {
 			// 有条件查询、查询索引库
 			return wayBillIndexRepository.search(searchQuery);
 		}
+	}
+
+	@Override
+	// 定时任务更新索引库
+	public void syncIndex() {
+		// 查询数据库
+		List<WayBill> wayBills = wayBillRepository.findAll();
+		// 同步索引库
+		wayBillIndexRepository.save(wayBills);
 	}
 }

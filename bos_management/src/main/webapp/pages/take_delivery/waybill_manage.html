@@ -19,9 +19,9 @@
     <script type="text/javascript" src="../../js/common/common_base.js"></script>
     <script type="text/javascript">
         $(function () {
-            $.('#transitBtn').click(function () {
+            $('#transitBtn').click(function () {
                 // 获取表格中的所有选中行
-                var rows = $('#tt').datagird('getSelections');
+                var rows = $('#tt').datagrid('getSelections');
                 if (rows.length == 0) {
                     // 没有选中
                     $.messager.alert('警告', '必须选中运单信息', 'warning')
@@ -33,7 +33,17 @@
                     }
                     var wayBillIds = array.join(",");
                     $.post("../../transit_create.action", {wayBillIds: wayBillIds}, function (data) {
-                        Console.log(data);
+                        if (data.success) {
+                            $.messager.show({
+                                title: '操作成功',
+                                msg: data.msg
+                            });
+                        } else {
+                            $.messager.show({
+                               title: '操作失败',
+                                msg: data.msg
+                            });
+                        }
                     });
                 }
             });

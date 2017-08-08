@@ -1,34 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f31d4479-c4e8-4ca8-a71b-de33927d63af" name="Default" comment="UserMenu dynamic show">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/courier.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/courier1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/end.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/mark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/position.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/start.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/storage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/vehicle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_6_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/validation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/DeliveryInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/InOutStorageInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/SignInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-cache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/ehcache.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/data/transit.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_management/target/tomcat/logs/access_log.2017-08-03" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_management/target/tomcat/logs/access_log.2017-08-04" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_management/target/tomcat/logs/access_log.2017-08-05" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bos_fore_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bos_fore_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bos_management_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bos_management_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bos_sms_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bos_sms_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/crm_management_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/crm_management_war_exploded.xml" />
+    <list default="true" id="f31d4479-c4e8-4ca8-a71b-de33927d63af" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/DeliveryInfoRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/InOutStorageInfoRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/SignInfoRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/TransitInfoRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/SyncIndexJob.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/DeliveryInfoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/InOutStorageInfoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/SignInfoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/TransitInfoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/DeliveryInfoServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/InOutStorageInfoServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/SignInfoServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/DeliveryInfoAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/InOutStorageInfoAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/SignInfoAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/TransitInfoAction.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/tomcat/conf/tomcat-users.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/tomcat/conf/web.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" />
@@ -201,55 +194,39 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/bos_domain.iml" afterPath="$PROJECT_DIR$/bos_domain/bos_domain.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Standard.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Standard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/system/User.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/system/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/bos_fore.iml" afterPath="$PROJECT_DIR$/bos_fore/bos_fore.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/bos_management.iml" afterPath="$PROJECT_DIR$/bos_management/bos_management.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/realm/BosRealm.java" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/realm/BosRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/base/impl/StandardServiceImpl.java" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/base/impl/StandardServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-dataSource.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-dataSource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-mq.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-mq.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Area.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Area.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/SubArea.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/SubArea.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bos_domain/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/bos_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/src/main/java/com/baidu/bos/web/action/CustomerAction.java" afterPath="$PROJECT_DIR$/bos_fore/src/main/java/com/baidu/bos/web/action/CustomerAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bos_fore/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/WayBillService.java" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/WayBillService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/WayBillServiceImpl.java" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/WayBillServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/take_delivery/WayBillAction.java" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/take_delivery/WayBillAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-quartz.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-quartz.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-shiro.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-shiro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-webService.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-webService.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-dataSource.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-dataSource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-mq.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-mq.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-quartz.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-quartz.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-shiro.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-shiro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-webService.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-webService.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/index.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/menu.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/menu_add.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/menu_add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/permission.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/permission.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/permission_add.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/permission_add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/role.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/role.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/role_add.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/role_add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/userinfo.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/userinfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/userlist.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/system/userlist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-dataSource.xml" afterPath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-dataSource.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-mq.xml" afterPath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-mq.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/take_delivery/waybill_manage.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/take_delivery/waybill_manage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-quartz.xml" afterPath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-quartz.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-shiro.xml" afterPath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-shiro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-webService.xml" afterPath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-webService.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/bos_management/target/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/bos_management/target/classes/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bos_management/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/tomcat/logs/access_log.2017-08-06" afterPath="$PROJECT_DIR$/bos_management/target/tomcat/logs/access_log.2017-08-06" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/tomcat/work/Tomcat/localhost/bos_management/org/apache/jsp/validatecode_jsp.java" afterPath="$PROJECT_DIR$/bos_management/target/tomcat/work/Tomcat/localhost/bos_management/org/apache/jsp/validatecode_jsp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_sms/bos_sms.iml" afterPath="$PROJECT_DIR$/bos_sms/bos_sms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_sms/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bos_sms/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_sms/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_sms/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common_parent/common_parent.iml" afterPath="$PROJECT_DIR$/common_parent/common_parent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common_parent/pom.xml" afterPath="$PROJECT_DIR$/common_parent/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crm_domain/crm_domain.iml" afterPath="$PROJECT_DIR$/crm_domain/crm_domain.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crm_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/crm_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crm_management/crm_management.iml" afterPath="$PROJECT_DIR$/crm_management/crm_management.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/crm_domain/target/" />
@@ -280,25 +257,15 @@
     <favorites_list name="bos2.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="waybill_manage.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -313,6 +280,18 @@
       <find>userinfo.html</find>
       <find>ehcache-core</find>
       <find>datagird</find>
+      <find>pageQuery</find>
+      <find>creatTransits</find>
+      <find>gwtOrder</find>
+      <find>Order</find>
+      <find>from</find>
+      <find>maven-compiler-plugin</find>
+      <find>inoutStoreForm</find>
+      <find>transitGrid</find>
+      <find>transferInfo</find>
+      <find>inOutStoreTransitInfoView</find>
+      <find>inOutStoreId</find>
+      <find>deliveryId</find>
     </findStrings>
     <replaceStrings>
       <replace>isNotBlank</replace>
@@ -332,36 +311,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/base/CourierAction.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/base/AreaAction.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/system/menu.html" />
-        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/system/Permission.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/PermissionService.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/impl/PermissionServcieImpl.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/system/PermissionAction.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/system/role.html" />
-        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/system/Role.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/system/RoleRepository.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/RoleService.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/system/userlist.html" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/system/UserAction.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/UserService.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/system/menu_add.html" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/system/permission.html" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/system/permission_add.html" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/impl/RoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/system/role_add.html" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/system/RoleAction.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/system/userinfo.html" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/system/MenuAction.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/MenuService.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/impl/MenuServiceImpl.java" />
         <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/system/MenuRespository.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-mq.xml" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-quartz.xml" />
         <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-webService.xml" />
         <option value="$PROJECT_DIR$/bos_management/src/main/resources/log4j.properties" />
         <option value="/XML Fragment (applicationContext-cache.xml:292).xml" />
@@ -371,14 +323,45 @@
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/realm/BosRealm.java" />
         <option value="$MAVEN_REPOSITORY$/org/apache/shiro/shiro-all/1.2.2/shiro-all-1.2.2.jar!/org/apache/shiro/realm/AuthorizingRealm.class" />
         <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-shiro.xml" />
-        <option value="$PROJECT_DIR$/common_parent/pom.xml" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-dataSource.xml" />
         <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-cache.xml" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/base/impl/StandardServiceImpl.java" />
         <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/DeliveryInfo.java" />
-        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/take_delivery/WayBillAction.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/11111.html" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/TransitInfoRepository.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/WayBillService.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/WayBillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/JobSyncIndex.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/SyncIndexJob.java" />
+        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Area.java" />
+        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/SubArea.java" />
+        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-quartz.xml" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/data/transit.json" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/TransitInfoService.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/bos_fore/src/main/java/com/baidu/bos/web/action/CustomerAction.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/common_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/InOutStorageInfoRepository.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/InOutStorageInfoAction.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/InOutStorageInfoService.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/InOutStorageInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/TransitInfoAction.java" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/DeliveryInfoRepository.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/DeliveryInfoService.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/DeliveryInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/DeliveryInfoAction.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/SignInfoRepository.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/SignInfoAction.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/SignInfoService.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/SignInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html" />
       </list>
     </option>
   </component>
@@ -401,7 +384,32 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bos_domain" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="bos_domain" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -725,8 +733,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common_parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="bos2.0" />
@@ -846,8 +866,38 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="take_delivery" />
+              <option name="myItemId" value="bos2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -869,11 +919,143 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="bos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -977,34 +1159,35 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28801844" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/common_parent/pom.xml" />
-    <property name="SearchEverywhereHistoryKey" value="standard&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/base/impl/StandardServiceImpl.java&#10;StandardServiceImpl&#9;PSI&#9;JAVA://com.baidu.bos.service.base.impl.StandardServiceImpl&#10;CacheManager&#9;PSI&#9;JAVA://net.sf.ehcache.CacheManager&#10;Menu&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;Role&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Role.java&#10;Userin&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userinfo.html&#10;role_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/role_add.html&#10;role&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Role.java&#10;PermissionAc&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/PermissionAction.java&#10;permission_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/permission_add.html&#10;permission.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/permission.html&#10;menuac&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/MenuAction.java&#10;parentmenu&#9;PSI&#9;JAVA://com.baidu.bos.domain.system.Menu#parentMenu&#10;menu&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;menu_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu_add.html&#10;userinfo&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userinfo.html&#10;userinfo.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_fore/src/main/webapp/userinfo.html&#10;userser&#9;PSI&#9;JAVA://com.baidu.bos.service.system.impl.UserServiceImpl&#10;userlist.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userlist.html&#10;roleservicei&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/system/impl/RoleServiceImpl.java&#10;roleac&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/RoleAction.java&#10;RoleSer&#9;PSI&#9;JAVA://com.baidu.bos.service.system.impl.RoleServiceImpl&#10;MenuAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/MenuAction.java&#10;menu.java&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;menu.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu.html&#10;Menu.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu.html&#10;Courier&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.Courier" />
+    <property name="SearchEverywhereHistoryKey" value="TransitInfoServiceImpl&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java&#10;transitin&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;TransitInfoAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/transit/TransitInfoAction.java&#10;tran&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;tr&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;tra&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;transi&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;Tran&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;Courier&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.Courier&#10;web.xml&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/WEB-INF/web.xml&#10;web.x&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_fore/src/main/webapp/WEB-INF/web.xml&#10;TransitInfo&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;transit.json&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/data/transit.json&#10;transit&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;WayBill&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java&#10;SubArea&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.SubArea&#10;Area&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.Area&#10;wayBillAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/take_delivery/WayBillAction.java&#10;standard&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/base/impl/StandardServiceImpl.java&#10;StandardServiceImpl&#9;PSI&#9;JAVA://com.baidu.bos.service.base.impl.StandardServiceImpl&#10;CacheManager&#9;PSI&#9;JAVA://net.sf.ehcache.CacheManager&#10;Menu&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;Role&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Role.java&#10;Userin&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userinfo.html&#10;role_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/role_add.html&#10;role&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Role.java&#10;PermissionAc&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/PermissionAction.java&#10;permission_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/permission_add.html&#10;permission.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/permission.html&#10;menuac&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/MenuAction.java&#10;parentmenu&#9;PSI&#9;JAVA://com.baidu.bos.domain.system.Menu#parentMenu&#10;menu&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;menu_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu_add.html&#10;userinfo&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userinfo.html&#10;userinfo.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_fore/src/main/webapp/userinfo.html&#10;userser&#9;PSI&#9;JAVA://com.baidu.bos.service.system.impl.UserServiceImpl&#10;userlist.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userlist.html&#10;roleservicei&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/system/impl/RoleServiceImpl.java&#10;roleac&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/RoleAction.java&#10;RoleSer&#9;PSI&#9;JAVA://com.baidu.bos.service.system.impl.RoleServiceImpl&#10;MenuAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/MenuAction.java&#10;menu.java&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;menu.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu.html&#10;Menu.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu.html" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.baidu.bos.dao.system" />
-      <recent name="com.baidu.bos.service.system" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\transit" />
       <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\webapp\images" />
       <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\webapp\data" />
       <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\webapp\pages\transit" />
       <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.baidu.bos.dao.transit" />
+      <recent name="com.baidu.bos.service.transit" />
+      <recent name="com.baidu.bos.dao.system" />
+      <recent name="com.baidu.bos.service.system" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1589,7 +1772,12 @@
       <workItem from="1502015630344" duration="3391000" />
       <workItem from="1502019131856" duration="1011000" />
       <workItem from="1502020216242" duration="2325000" />
-      <workItem from="1502079550291" duration="376000" />
+      <workItem from="1502079550291" duration="2725000" />
+      <workItem from="1502108533320" duration="5001000" />
+      <workItem from="1502129124318" duration="4412000" />
+      <workItem from="1502153165130" duration="14777000" />
+      <workItem from="1502189597968" duration="22000" />
+      <workItem from="1502190283754" duration="10701000" />
     </task>
     <task id="LOCAL-00002" summary="UserMenu dynamic show">
       <created>1501982572869</created>
@@ -1598,11 +1786,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501982572869</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UserMenu dynamic show">
+      <created>1502079978611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1502079978611</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75134000" />
+    <option name="totallyTimeSpent" value="112396000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1618,37 +1813,37 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35140997" sideWeight="0.5042644" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2761194" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29791895" sideWeight="0.50875276" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23827292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489339" sideWeight="0.49562362" order="8" side_tool="false" content_ui="tabs" x="1326" y="66" width="228" height="914" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489339" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26868907" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37310195" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6691974" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.49573562" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63449025" sideWeight="0.49124727" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31019524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20575693" sideWeight="0.49562362" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.505423" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.49562362" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38730854" sideWeight="0.50437635" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253796" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945295" sideWeight="0.50437635" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253796" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1685,11 +1880,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UserMenu dynamic show" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserMenu dynamic show" />
+    <MESSAGE value="缓存框架的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="缓存框架的使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1701,155 +1900,126 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-elasticsearch/2.0.4.RELEASE/spring-data-elasticsearch-2.0.4.RELEASE-sources.jar!/org/springframework/data/elasticsearch/core/ElasticsearchTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="104">
+          <caret line="568" column="0" lean-forward="false" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/log4j.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE-sources.jar!/org/springframework/data/projection/DefaultMethodInvokingMethodInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Area.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/SubArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="87" column="15" lean-forward="false" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/WayBillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/PromotionJob.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/struts.xml">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/SyncIndexJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-mq.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="339">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-quartz.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="133" lean-forward="false" selection-start-line="3" selection-start-column="133" selection-end-line="3" selection-end-column="133" />
+        <state relative-caret-position="431">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-webService.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/ehcache.xsd" />
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/base/impl/AreaServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/base/AreaAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11-sources.jar!/net/sf/ehcache/CacheManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/RoleService.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/data/transit.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="4" column="110" lean-forward="true" selection-start-line="4" selection-start-column="110" selection-end-line="4" selection-end-column="110" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/system/User.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/common/BaseAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="-236">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Standard.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/base/CourierService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="184">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.8.RELEASE/spring-context-4.2.8.RELEASE-sources.jar!/org/springframework/cache/annotation/Cacheable.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/base/impl/CourierServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="52" column="18" lean-forward="false" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        <state relative-caret-position="368">
+          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-all/1.2.2/shiro-all-1.2.2.jar!/org/apache/shiro/realm/AuthorizingRealm.class">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/base/CourierAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="98" column="16" lean-forward="false" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+        <state relative-caret-position="598">
+          <caret line="121" column="55" lean-forward="true" selection-start-line="121" selection-start-column="55" selection-end-line="121" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/bos_fore/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="455">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/realm/BosRealm.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="598">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-shiro.xml">
+    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Courier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="184">
+          <caret line="152" column="5" lean-forward="true" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common_parent/common_parent.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm_management/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="102" lean-forward="false" selection-start-line="0" selection-start-column="51" selection-end-line="1" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm_domain/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_sms/pom.xml">
+    <entry file="file://$PROJECT_DIR$/bos_domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1858,194 +2028,304 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bos_fore/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-20">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/pom.xml">
+    <entry file="file://$PROJECT_DIR$/crm_domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="276">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm_management/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_fore/src/main/java/com/baidu/bos/web/action/CustomerAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="59" column="61" lean-forward="true" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="52" column="35" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_sms/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common_parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="251">
+          <caret line="314" column="35" lean-forward="false" selection-start-line="314" selection-start-column="35" selection-end-line="314" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="391">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-dataSource.xml">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-mq.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/system/RoleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="454">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos_management/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="343">
+          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/system/impl/RoleServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/InOutStorageInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-elasticsearch.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="299">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-cache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/base/impl/StandardServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/data/transit.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/bg_grey.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/courier.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/end.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/mark.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/position.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/start.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/storage.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/vehicle.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/images/icon1/courier1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/DeliveryInfo.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/InOutStorageInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/TransitInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="719" column="0" lean-forward="false" selection-start-line="719" selection-start-column="0" selection-end-line="719" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.2.8.RELEASE/spring-tx-4.2.8.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.2.8.RELEASE/spring-tx-4.2.8.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="290" column="0" lean-forward="false" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/TransitInfoAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="63" column="15" lean-forward="true" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/InOutStorageInfoAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/InOutStorageInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="39" column="55" lean-forward="false" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/InOutStorageInfoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="188">
+          <caret line="53" column="57" lean-forward="true" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#857#875#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/js/common/common_base.js">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/DeliveryInfoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="184">
+          <caret line="8" column="83" lean-forward="false" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/DeliveryInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/ehcache.xml">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/DeliveryInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="104" lean-forward="false" selection-start-line="0" selection-start-column="104" selection-end-line="0" selection-end-column="104" />
+        <state relative-caret-position="592">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/DeliveryInfoAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/SignInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/SignInfoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+        <state relative-caret-position="184">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="48" column="55" lean-forward="false" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/SignInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/SignInfoAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="130" column="31" lean-forward="true" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
+          <folding>
+            <element signature="e#1655#3003#0" expanded="false" />
+            <element signature="e#3166#4554#0" expanded="false" />
+            <element signature="e#6172#7642#0" expanded="false" />
+            <element signature="e#7941#10167#0" expanded="false" />
+            <element signature="e#10236#10693#0" expanded="false" />
+            <element signature="e#10776#10921#0" expanded="false" />
+            <element signature="e#11003#11144#0" expanded="false" />
+            <element signature="e#11219#11352#0" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2103,7 +2383,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>bos_management</last-edited>
+          <last-edited>bos_domain</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

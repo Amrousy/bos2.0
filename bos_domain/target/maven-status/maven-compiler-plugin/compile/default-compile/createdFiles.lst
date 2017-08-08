@@ -5,6 +5,8 @@ com\baidu\bos\domain\take_delivery\PageBean.class
 com\baidu\bos\domain\base\SubArchive.class
 com\baidu\bos\domain\base\Courier.class
 com\baidu\bos\domain\base\FixedArea.class
+com\baidu\bos\domain\transit\SignInfo.class
+com\baidu\bos\domain\transit\TransitInfo.class
 com\baidu\bos\domain\take_delivery\Promotion.class
 com\baidu\bos\domain\system\Menu.class
 com\baidu\bos\domain\system\Role.class
@@ -17,3 +19,5 @@ com\baidu\bos\domain\take_delivery\WorkBill.class
 com\baidu\bos\domain\base\TakeTime.class
 com\baidu\bos\domain\base\Archive.class
 com\baidu\bos\domain\base\Vehicle.class
+com\baidu\bos\domain\transit\DeliveryInfo.class
+com\baidu\bos\domain\transit\InOutStorageInfo.class

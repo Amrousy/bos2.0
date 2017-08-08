@@ -1,5 +1,7 @@
 package com.baidu.bos.domain.base;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -83,6 +85,7 @@ public class SubArea {
 		this.assistKeyWords = assistKeyWords;
 	}
 
+	@JsonIgnore
 	public Area getArea() {
 		return area;
 	}
