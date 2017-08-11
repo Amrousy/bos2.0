@@ -1,6 +1,6 @@
 com\baidu\bos\web\action\PromotionAction.class
 com\baidu\bos\web\action\CustomerAction.class
-com\baidu\bos\web\action\CustomerAction$1.class
 com\baidu\bos\web\action\BaseAction.class
-com\baidu\bos\web\action\OrderAction.class
 com\baidu\bos\utils\MailUtils.class
+com\baidu\bos\web\action\CustomerAction$1.class
+com\baidu\bos\web\action\OrderAction.class

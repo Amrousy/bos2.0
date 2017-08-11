@@ -1,27 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f31d4479-c4e8-4ca8-a71b-de33927d63af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/DeliveryInfoRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/InOutStorageInfoRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/SignInfoRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/TransitInfoRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/SyncIndexJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/DeliveryInfoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/InOutStorageInfoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/SignInfoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/TransitInfoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/DeliveryInfoServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/InOutStorageInfoServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/SignInfoServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/DeliveryInfoAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/InOutStorageInfoAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/SignInfoAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/TransitInfoAction.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/tomcat/conf/tomcat-users.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/tomcat/conf/web.xml" afterPath="" />
+    <list default="true" id="f31d4479-c4e8-4ca8-a71b-de33927d63af" name="Default" comment="1.Excel格式报表生成&#10;2.PDF报表生成IText">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itext_asian_5_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lowagie_itext_4_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcmail_jdk14_1_38.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk14_1_38.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bctsp_jdk14_1_38.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_swinglabs_pdf_renderer_1_0_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/base/utils/FileUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/report/ReportAction.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/WEB-INF/classes/applicationContext-mq.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/WEB-INF/classes/applicationContext-redis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/WEB-INF/classes/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/WEB-INF/classes/config.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/WEB-INF/classes/redis.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/WEB-INF/freemarker_templates/promotion_detail.ftl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/WEB-INF/template/batchOrderModel.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/city_picker_demo/demo1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/city_picker_demo/demo2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/city_picker_demo/demo3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/city_picker_demo/demo4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/bootstrap/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/bootstrap/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/bootstrap/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/bootstrap/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/city-picker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/fail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/nav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/promotion_detail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/public.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/styleexpress.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/styleindex.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/styleloginsign.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/stylemyhome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/styleorder.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/stylesearch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/css/styleuserinfo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/data/promotion1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/data/promotion2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/express_manage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/freemarker/1984.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/freemarker/1985.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/freemarker/1986.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/freemarker/1987.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/freemarker/1988.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/freemarker/1989.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/drop-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/fail_person.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/fresh-to-stomach_in.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/clock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/fail_person.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/ok.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/partline.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/erweima.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/gotop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/icon3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/icon4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/ordercon01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/ordercon02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/ordercon03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/photo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/sign01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/sign02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/sign03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/signbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/signbg02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/suyun/signbg03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/xlsLogo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/icon/yanz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/pro.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/activity01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/activity02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/activity03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/banner_sc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/cuxiaobg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/homebg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/photo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/homebanner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/homeshow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/loginbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/newsbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/promotion1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/promotion2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/promotion3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/promotion4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/tese1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/tese2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/tese3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/suyun/tese4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/tui01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/tui02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/images/show/tui03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/angular-file-upload.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/angular-route.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/angular-route.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/angular.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/console-sham.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/html5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/self/addressadd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/self/city-picker.data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/self/city-picker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/self/controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/self/effect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/self/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/self/page.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/self/pagedemo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/js/self/validate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/loadfail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/myhome.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/order.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/promotion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/promotion_detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/signup-success.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/signup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_fore/target/bos/userinfo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_management/target/tomcat/logs/access_log.2017-08-06" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_sms/target/bos/WEB-INF/classes/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_sms/target/bos/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_sms/target/bos/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_sms/target/tomcat/conf/tomcat-users.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bos_sms/target/tomcat/conf/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crm_management/target/tomcat/conf/tomcat-users.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crm_management/target/tomcat/conf/web.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bos_fore_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bos_fore_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bos_fore_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bos_fore_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bos_management_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bos_management_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bos_sms_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bos_sms_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/bos_sms_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/bos_sms_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/crm_management_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/crm_management_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/crm_management_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/crm_management_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" />
@@ -70,7 +201,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_5_15_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_5_15_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_core_3_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_core_3_0_1.xml" />
@@ -192,41 +322,39 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_3.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Area.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Area.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/SubArea.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/SubArea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/bos_domain.iml" afterPath="$PROJECT_DIR$/bos_domain/bos_domain.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/pom.xml" afterPath="$PROJECT_DIR$/bos_domain/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/constant/Constants.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/constant/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/Promotion.java" afterPath="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/Promotion.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bos_domain/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/bos_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/src/main/java/com/baidu/bos/web/action/CustomerAction.java" afterPath="$PROJECT_DIR$/bos_fore/src/main/java/com/baidu/bos/web/action/CustomerAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/bos_fore.iml" afterPath="$PROJECT_DIR$/bos_fore/bos_fore.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/pom.xml" afterPath="$PROJECT_DIR$/bos_fore/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bos_fore/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_fore/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/bos_management.iml" afterPath="$PROJECT_DIR$/bos_management/bos_management.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/WayBillService.java" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/WayBillService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/WayBillServiceImpl.java" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/WayBillServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/take_delivery/WayBillAction.java" afterPath="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/take_delivery/WayBillAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-quartz.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-quartz.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html" afterPath="$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-quartz.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext-quartz.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/bos_management/pages/take_delivery/waybill_manage.html" afterPath="$PROJECT_DIR$/bos_management/target/bos_management/pages/take_delivery/waybill_manage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-quartz.xml" afterPath="$PROJECT_DIR$/bos_management/target/classes/applicationContext-quartz.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bos_management/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_management/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_management/target/tomcat/work/Tomcat/localhost/bos_management/org/apache/jsp/validatecode_jsp.java" afterPath="$PROJECT_DIR$/bos_management/target/tomcat/work/Tomcat/localhost/bos_management/org/apache/jsp/validatecode_jsp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_sms/bos_sms.iml" afterPath="$PROJECT_DIR$/bos_sms/bos_sms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_sms/pom.xml" afterPath="$PROJECT_DIR$/bos_sms/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_sms/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/bos_sms/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bos_sms/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/bos_sms/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common_parent/common_parent.iml" afterPath="$PROJECT_DIR$/common_parent/common_parent.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common_parent/pom.xml" afterPath="$PROJECT_DIR$/common_parent/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crm_domain/crm_domain.iml" afterPath="$PROJECT_DIR$/crm_domain/crm_domain.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crm_domain/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/crm_domain/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crm_management/crm_management.iml" afterPath="$PROJECT_DIR$/crm_management/crm_management.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crm_management/pom.xml" afterPath="$PROJECT_DIR$/crm_management/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_5_15_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_5_2_0.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/crm_domain/target/" />
@@ -257,15 +385,26 @@
     <favorites_list name="bos2.0" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ReportAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/report/ReportAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="125" column="20" lean-forward="false" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -292,6 +431,8 @@
       <find>inOutStoreTransitInfoView</find>
       <find>inOutStoreId</find>
       <find>deliveryId</find>
+      <find>itex</find>
+      <find>redis</find>
     </findStrings>
     <replaceStrings>
       <replace>isNotBlank</replace>
@@ -311,13 +452,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/system/MenuRespository.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-mq.xml" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-webService.xml" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/resources/log4j.properties" />
-        <option value="/XML Fragment (applicationContext-cache.xml:292).xml" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/resources/ehcache.xml" />
         <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Standard.java" />
         <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/system/User.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/realm/BosRealm.java" />
@@ -330,9 +464,6 @@
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/take_delivery/WayBillAction.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/11111.html" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/TransitInfoRepository.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/WayBillService.java" />
-        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/WayBillServiceImpl.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/JobSyncIndex.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/SyncIndexJob.java" />
         <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Area.java" />
@@ -344,7 +475,6 @@
         <option value="$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/bos_fore/src/main/java/com/baidu/bos/web/action/CustomerAction.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/common_parent/pom.xml" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/InOutStorageInfoRepository.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/InOutStorageInfoAction.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/InOutStorageInfoService.java" />
@@ -362,6 +492,17 @@
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/SignInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/WayBillService.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/WayBillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/base/utils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html" />
+        <option value="$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/report/ReportAction.java" />
+        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/constant/Constants.java" />
+        <option value="$PROJECT_DIR$/bos_fore/pom.xml" />
+        <option value="$PROJECT_DIR$/bos_sms/pom.xml" />
+        <option value="$PROJECT_DIR$/crm_management/pom.xml" />
+        <option value="$PROJECT_DIR$/common_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/Promotion.java" />
       </list>
     </option>
   </component>
@@ -379,6 +520,7 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
         <option name="lookForNested" value="true" />
       </MavenImportingSettings>
     </option>
@@ -391,7 +533,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="bos_domain" />
+          <option name="myItemId" value="bos_management" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -401,7 +543,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="bos_domain" />
+          <option name="myItemId" value="bos_management" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -410,6 +552,9 @@
         </PATH_ELEMENT>
       </PATH>
     </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -733,8 +878,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -807,118 +951,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_management" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_management" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_management" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_management" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -957,49 +989,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
+              <option name="myItemId" value="action" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_management" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
+              <option name="myItemId" value="report" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1026,162 +1020,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_management" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bos_domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28801844" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common_parent/pom.xml" />
-    <property name="SearchEverywhereHistoryKey" value="TransitInfoServiceImpl&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java&#10;transitin&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;TransitInfoAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/transit/TransitInfoAction.java&#10;tran&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;tr&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;tra&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;transi&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;Tran&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;Courier&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.Courier&#10;web.xml&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/WEB-INF/web.xml&#10;web.x&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_fore/src/main/webapp/WEB-INF/web.xml&#10;TransitInfo&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;transit.json&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/data/transit.json&#10;transit&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;WayBill&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java&#10;SubArea&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.SubArea&#10;Area&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.Area&#10;wayBillAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/take_delivery/WayBillAction.java&#10;standard&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/base/impl/StandardServiceImpl.java&#10;StandardServiceImpl&#9;PSI&#9;JAVA://com.baidu.bos.service.base.impl.StandardServiceImpl&#10;CacheManager&#9;PSI&#9;JAVA://net.sf.ehcache.CacheManager&#10;Menu&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;Role&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Role.java&#10;Userin&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userinfo.html&#10;role_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/role_add.html&#10;role&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Role.java&#10;PermissionAc&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/PermissionAction.java&#10;permission_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/permission_add.html&#10;permission.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/permission.html&#10;menuac&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/MenuAction.java&#10;parentmenu&#9;PSI&#9;JAVA://com.baidu.bos.domain.system.Menu#parentMenu&#10;menu&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;menu_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu_add.html&#10;userinfo&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userinfo.html&#10;userinfo.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_fore/src/main/webapp/userinfo.html&#10;userser&#9;PSI&#9;JAVA://com.baidu.bos.service.system.impl.UserServiceImpl&#10;userlist.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userlist.html&#10;roleservicei&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/system/impl/RoleServiceImpl.java&#10;roleac&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/RoleAction.java&#10;RoleSer&#9;PSI&#9;JAVA://com.baidu.bos.service.system.impl.RoleServiceImpl&#10;MenuAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/MenuAction.java&#10;menu.java&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;menu.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu.html&#10;Menu.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu.html" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$" />
+    <property name="SearchEverywhereHistoryKey" value="PromotionService&#9;PSI&#9;JAVA://com.baidu.bos.service.take_delivery.PromotionService&#10;Constants&#9;PSI&#9;JAVA://com.baidu.bos.domain.constant.Constants&#10;waybill_manage&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html&#10;TransitInfoServiceImpl&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java&#10;transitin&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;TransitInfoAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/transit/TransitInfoAction.java&#10;tran&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;tr&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;tra&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;transi&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;Tran&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;Courier&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.Courier&#10;web.xml&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/WEB-INF/web.xml&#10;web.x&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_fore/src/main/webapp/WEB-INF/web.xml&#10;TransitInfo&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java&#10;transit.json&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/data/transit.json&#10;transit&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/transit/transitinfo.html&#10;WayBill&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java&#10;SubArea&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.SubArea&#10;Area&#9;PSI&#9;JAVA://com.baidu.bos.domain.base.Area&#10;wayBillAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/take_delivery/WayBillAction.java&#10;standard&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/base/impl/StandardServiceImpl.java&#10;StandardServiceImpl&#9;PSI&#9;JAVA://com.baidu.bos.service.base.impl.StandardServiceImpl&#10;CacheManager&#9;PSI&#9;JAVA://net.sf.ehcache.CacheManager&#10;Menu&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;Role&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Role.java&#10;Userin&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userinfo.html&#10;role_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/role_add.html&#10;role&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Role.java&#10;PermissionAc&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/PermissionAction.java&#10;permission_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/permission_add.html&#10;permission.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/permission.html&#10;menuac&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/MenuAction.java&#10;parentmenu&#9;PSI&#9;JAVA://com.baidu.bos.domain.system.Menu#parentMenu&#10;menu&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;menu_add&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu_add.html&#10;userinfo&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userinfo.html&#10;userinfo.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_fore/src/main/webapp/userinfo.html&#10;userser&#9;PSI&#9;JAVA://com.baidu.bos.service.system.impl.UserServiceImpl&#10;userlist.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/userlist.html&#10;roleservicei&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/service/system/impl/RoleServiceImpl.java&#10;roleac&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/RoleAction.java&#10;RoleSer&#9;PSI&#9;JAVA://com.baidu.bos.service.system.impl.RoleServiceImpl&#10;MenuAction&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/java/com/baidu/bos/web/action/system/MenuAction.java&#10;menu.java&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_domain/src/main/java/com/baidu/bos/domain/system/Menu.java&#10;menu.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu.html&#10;Menu.html&#9;FILE&#9;file://D:/IntelliJ IDEA 2017.1.4/workspace/bos2.0/bos_management/src/main/webapp/pages/system/menu.html" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\base\utils" />
       <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_domain\src\main\java\com\baidu\bos\domain\transit" />
       <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\webapp\images" />
       <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\webapp\data" />
       <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\webapp\pages\transit" />
-      <recent name="D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.baidu.bos.dao.transit" />
@@ -1733,12 +1603,12 @@
     <configuration>C:\Users\Amrous\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <changelist id="f31d4479-c4e8-4ca8-a71b-de33927d63af" name="Default" comment="" />
       <created>1501764480337</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1501932102855</updated>
+      <updated>1502374646944</updated>
       <workItem from="1501764481855" duration="2155000" />
       <workItem from="1501766692625" duration="41000" />
       <workItem from="1501766780579" duration="139000" />
@@ -1754,13 +1624,16 @@
       <workItem from="1501842575941" duration="5340000" />
       <workItem from="1501867201594" duration="391000" />
       <workItem from="1501893386600" duration="13410000" />
+      <workItem from="1502374646955" duration="669000" />
+      <workItem from="1502459664356" duration="156000" />
+      <workItem from="1502459903801" duration="15000" />
     </task>
-    <task active="true" id="LOCAL-00001" summary="Userlist.html">
+    <task id="LOCAL-00001" summary="Userlist.html">
       <created>1501932100664</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1501932102876</updated>
+      <updated>1502374646857</updated>
       <workItem from="1501932102943" duration="13342000" />
       <workItem from="1501980038374" duration="9365000" />
       <workItem from="1501990988562" duration="1932000" />
@@ -1777,7 +1650,17 @@
       <workItem from="1502129124318" duration="4412000" />
       <workItem from="1502153165130" duration="14777000" />
       <workItem from="1502189597968" duration="22000" />
-      <workItem from="1502190283754" duration="10701000" />
+      <workItem from="1502190283754" duration="17246000" />
+      <workItem from="1502242419928" duration="2104000" />
+      <workItem from="1502269262354" duration="450000" />
+      <workItem from="1502271405026" duration="1401000" />
+      <workItem from="1502277204390" duration="938000" />
+      <workItem from="1502278272305" duration="352000" />
+      <workItem from="1502279433741" duration="167000" />
+      <workItem from="1502279732163" duration="424000" />
+      <workItem from="1502280208612" duration="3061000" />
+      <workItem from="1502350758042" duration="1064000" />
+      <workItem from="1502363784125" duration="1100000" />
     </task>
     <task id="LOCAL-00002" summary="UserMenu dynamic show">
       <created>1501982572869</created>
@@ -1793,11 +1676,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502079978611</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.缓存框架的使用&#10;2.开启中转配送&#10;3.修复运单保存BUG&#10;4.修复运单数据库和索引库不一致BUG&#10;5.运输配送管理地图显示&#10;6.运输配送信息列表查询&#10;7.出入库操作&#10;8.开始配送操作&#10;9.签收录入操作">
+      <created>1502201381033</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1502201381033</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112396000" />
+    <option name="totallyTimeSpent" value="130842000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1810,44 +1700,57 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29791895" sideWeight="0.50875276" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23827292" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264642" sideWeight="0.510661" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1924307" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489339" sideWeight="0.49562362" order="8" side_tool="false" content_ui="tabs" x="1326" y="66" width="228" height="914" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489339" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37310195" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37310195" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.49573562" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63449025" sideWeight="0.49124727" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5249458" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31019524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.505423" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.49562362" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20202559" sideWeight="0.49562362" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38730854" sideWeight="0.50437635" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253796" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945295" sideWeight="0.50437635" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62689805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253796" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1881,14 +1784,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UserMenu dynamic show" />
     <MESSAGE value="缓存框架的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="缓存框架的使用" />
+    <MESSAGE value="1.缓存框架的使用&#10;2.开启中转配送&#10;3.修复运单保存BUG&#10;4.修复运单数据库和索引库不一致BUG&#10;5.运输配送管理地图显示&#10;6.运输配送信息列表查询&#10;7.出入库操作&#10;8.开始配送操作&#10;9.签收录入操作" />
+    <MESSAGE value="1.Excel格式报表生成&#10;2.PDF报表生成IText" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.Excel格式报表生成&#10;2.PDF报表生成IText" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="18" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1900,135 +1802,149 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-elasticsearch/2.0.4.RELEASE/spring-data-elasticsearch-2.0.4.RELEASE-sources.jar!/org/springframework/data/elasticsearch/core/ElasticsearchTemplate.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/InOutStorageInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="568" column="0" lean-forward="false" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
+        <state relative-caret-position="524">
+          <caret line="39" column="55" lean-forward="false" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE-sources.jar!/org/springframework/data/projection/DefaultMethodInvokingMethodInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/InOutStorageInfoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="207">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Area.java">
+    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="188">
+          <caret line="53" column="57" lean-forward="true" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/WayBill.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/DeliveryInfoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        <state relative-caret-position="184">
+          <caret line="8" column="83" lean-forward="false" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/SubArea.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/DeliveryInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="87" column="15" lean-forward="false" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
+        <state relative-caret-position="184">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/DeliveryInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/DeliveryInfoAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/SignInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/SignInfoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="48" column="55" lean-forward="false" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/SignInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/SignInfoAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="130" column="31" lean-forward="true" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE-sources.jar!/org/springframework/data/domain/Pageable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE-sources.jar!/org/springframework/data/domain/Slice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE-sources.jar!/org/springframework/data/domain/Chunk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="135" column="43" lean-forward="false" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/base/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/WayBillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/WayBillServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="546">
+          <caret line="171" column="47" lean-forward="false" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/PromotionJob.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/pages/take_delivery/waybill_manage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/SyncIndexJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-quartz.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/data/transit.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="110" lean-forward="true" selection-start-line="4" selection-start-column="110" selection-end-line="4" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/common/BaseAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-236">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/base/CourierService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/base/impl/CourierServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/base/CourierAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="121" column="55" lean-forward="true" selection-start-line="121" selection-start-column="55" selection-end-line="121" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_fore/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/base/Courier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="152" column="5" lean-forward="true" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
+        <state relative-caret-position="132">
+          <caret line="59" column="71" lean-forward="false" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos_domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_fore/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -2040,39 +1956,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm_management/pom.xml">
+    <entry file="file://$PROJECT_DIR$/bos_fore/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_fore/src/main/java/com/baidu/bos/web/action/CustomerAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="59" column="61" lean-forward="true" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="52" column="35" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="35" />
+        <state relative-caret-position="160">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos_sms/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
+        <state relative-caret-position="230">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm_management/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-dataSource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common_parent/pom.xml">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="314" column="35" lean-forward="false" selection-start-line="314" selection-start-column="35" selection-end-line="314" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="69">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2083,249 +2033,364 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/resources/applicationContext-mq.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+    <entry file="uml://MAVEN/com.baidu.maven:common_parent:0.0.1-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.baidu.maven:common_parent:0.0.1-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.baidu.maven:common_parent:0.0.1-SNAPSHOT</node>
+            <node x="" y="">net.sf.ehcache:ehcache-core:jar:2.6.11</node>
+            <node x="" y="">net.sf.ehcache:ehcache-core:jar:2.6.11/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.apache.shiro:shiro-all:jar:1.2.2</node>
+            <node x="" y="">org.apache.shiro:shiro-all:jar:1.2.2/org.apache.shiro:shiro-guice:jar:1.2.2</node>
+            <node x="" y="">org.apache.shiro:shiro-all:jar:1.2.2/org.apache.shiro:shiro-guice:jar:1.2.2/org.apache.shiro:shiro-core:jar:1.2.2</node>
+            <node x="" y="">org.apache.shiro:shiro-all:jar:1.2.2/org.apache.shiro:shiro-guice:jar:1.2.2/org.apache.shiro:shiro-core:jar:1.2.2/org.slf4j:slf4j-api:jar:1.6.4</node>
+            <node x="" y="">org.apache.shiro:shiro-all:jar:1.2.2/org.apache.shiro:shiro-guice:jar:1.2.2/org.apache.shiro:shiro-core:jar:1.2.2/commons-beanutils:commons-beanutils:jar:1.8.3</node>
+            <node x="" y="">org.apache.shiro:shiro-all:jar:1.2.2/org.apache.shiro:shiro-guice:jar:1.2.2/com.google.guava:guava:jar:r09</node>
+            <node x="" y="">org.apache.shiro:shiro-all:jar:1.2.2/org.apache.shiro:shiro-guice:jar:1.2.2/com.google.inject:guice:jar:3.0</node>
+            <node x="" y="">org.apache.shiro:shiro-all:jar:1.2.2/org.apache.shiro:shiro-guice:jar:1.2.2/com.google.inject:guice:jar:3.0/javax.inject:javax.inject:jar:1</node>
+            <node x="" y="">org.apache.shiro:shiro-all:jar:1.2.2/org.apache.shiro:shiro-guice:jar:1.2.2/com.google.inject.extensions:guice-multibindings:jar:3.0</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.8.RELEASE/org.springframework:spring-aop:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.8.RELEASE/org.springframework:spring-aop:jar:4.2.8.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.8.RELEASE/org.springframework:spring-beans:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.8.RELEASE/org.springframework:spring-core:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.8.RELEASE/org.springframework:spring-core:jar:4.2.8.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.8.RELEASE/org.springframework:spring-expression:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context-support:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-orm:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-orm:jar:4.2.8.RELEASE/org.springframework:spring-jdbc:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-orm:jar:4.2.8.RELEASE/org.springframework:spring-tx:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jms:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jms:jar:4.2.8.RELEASE/org.springframework:spring-messaging:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-aspects:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework:spring-aspects:jar:4.2.8.RELEASE/org.aspectj:aspectjweaver:jar:1.8.9</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework.data:spring-data-commons:jar:1.11.0.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework.data:spring-data-commons:jar:1.11.0.RELEASE/org.springframework:spring-core:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework.data:spring-data-commons:jar:1.11.0.RELEASE/org.springframework:spring-beans:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework.data:spring-data-commons:jar:1.11.0.RELEASE/org.slf4j:slf4j-api:jar:1.7.12</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework:spring-orm:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework:spring-context:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework:spring-aop:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework:spring-tx:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework:spring-beans:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.springframework:spring-core:jar:4.2.8.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.aspectj:aspectjrt:jar:1.8.6</node>
+            <node x="" y="">org.springframework.data:spring-data-jpa:jar:1.9.0.RELEASE/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.apache.activemq:activemq-all:jar:5.2.0</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/org.apache.struts.xwork:xwork-core:jar:2.3.24</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/org.apache.struts.xwork:xwork-core:jar:2.3.24/asm:asm:jar:3.3</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/org.apache.struts.xwork:xwork-core:jar:2.3.24/asm:asm-commons:jar:3.3</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/org.apache.struts.xwork:xwork-core:jar:2.3.24/asm:asm-commons:jar:3.3/asm:asm-tree:jar:3.3</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/org.apache.struts.xwork:xwork-core:jar:2.3.24/asm:asm-commons:jar:3.3/asm:asm-tree:jar:3.3/asm:asm:jar:3.3.1</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/org.freemarker:freemarker:jar:2.3.22</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/ognl:ognl:jar:3.0.6</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/ognl:ognl:jar:3.0.6/javassist:javassist:jar:3.11.0.GA</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/commons-fileupload:commons-fileupload:jar:1.3.1</node>
+            <node x="" y="">org.apache.struts:struts2-core:jar:2.3.24/commons-io:commons-io:jar:2.2</node>
+            <node x="" y="">org.apache.struts:struts2-spring-plugin:jar:2.3.24</node>
+            <node x="" y="">org.apache.struts:struts2-spring-plugin:jar:2.3.24/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.struts:struts2-spring-plugin:jar:2.3.24/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.struts:struts2-spring-plugin:jar:2.3.24/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.struts:struts2-spring-plugin:jar:2.3.24/org.springframework:spring-web:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.struts:struts2-spring-plugin:jar:2.3.24/org.apache.commons:commons-lang3:jar:3.2</node>
+            <node x="" y="">org.apache.struts:struts2-convention-plugin:jar:2.3.24</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final/org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final/org.javassist:javassist:jar:3.18.1-GA</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final/antlr:antlr:jar:2.7.7</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final/org.jboss:jandex:jar:1.2.2.Final</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final/dom4j:dom4j:jar:1.6.1</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final/dom4j:dom4j:jar:1.6.1/xml-apis:xml-apis:jar:1.0.b2</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:5.0.1.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.0.Final</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:5.0.1.Final</node>
+            <node x="" y="">c3p0:c3p0:jar:0.9.1.2</node>
+            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.6.6</node>
+            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.6.6/org.slf4j:slf4j-api:jar:1.6.6</node>
+            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.6.6/log4j:log4j:jar:1.2.17</node>
+            <node x="" y="">commons-lang:commons-lang:jar:2.6</node>
+            <node x="" y="">redis.clients:jedis:jar:2.6.2</node>
+            <node x="" y="">redis.clients:jedis:jar:2.6.2/org.apache.commons:commons-pool2:jar:2.0</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.4.1.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.4.1.RELEASE/org.springframework:spring-tx:jar:4.0.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.4.1.RELEASE/org.slf4j:slf4j-api:jar:1.7.5</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.4.1.RELEASE/org.springframework:spring-aop:jar:4.0.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.4.1.RELEASE/org.springframework:spring-context-support:jar:4.0.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.4.1.RELEASE/org.springframework:spring-core:jar:4.0.7.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.4.1.RELEASE/org.springframework:spring-context:jar:4.0.7.RELEASE</node>
+            <node x="" y="">com.oracle:ojdbc6:jar:11.2.0.1.0</node>
+            <node x="" y="">org.apache.poi:poi:jar:3.11</node>
+            <node x="" y="">org.apache.poi:poi:jar:3.11/commons-codec:commons-codec:jar:1.9</node>
+            <node x="" y="">org.apache.poi:poi-ooxml:jar:3.11</node>
+            <node x="" y="">org.apache.poi:poi-ooxml-schemas:jar:3.11</node>
+            <node x="" y="">org.apache.poi:poi-ooxml-schemas:jar:3.11/org.apache.xmlbeans:xmlbeans:jar:2.6.0</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/xml-resolver:xml-resolver:jar:1.2</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/asm:asm:jar:3.3.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-core:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-core:jar:3.0.1/org.codehaus.woodstox:woodstox-core-asl:jar:4.4.0</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-core:jar:3.0.1/org.codehaus.woodstox:woodstox-core-asl:jar:4.4.0/org.codehaus.woodstox:stax2-api:jar:3.1.4</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-core:jar:3.0.1/org.apache.ws.xmlschema:xmlschema-core:jar:2.1.0</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-bindings-soap:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-bindings-soap:jar:3.0.1/org.apache.cxf:cxf-rt-wsdl:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-bindings-soap:jar:3.0.1/org.apache.cxf:cxf-rt-wsdl:jar:3.0.1/wsdl4j:wsdl4j:jar:1.6.3</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-bindings-soap:jar:3.0.1/org.apache.cxf:cxf-rt-databinding-jaxb:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-bindings-soap:jar:3.0.1/org.apache.cxf:cxf-rt-databinding-jaxb:jar:3.0.1/com.sun.xml.bind:jaxb-impl:jar:2.2.10-b140310.1920</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-bindings-soap:jar:3.0.1/org.apache.cxf:cxf-rt-databinding-jaxb:jar:3.0.1/com.sun.xml.bind:jaxb-core:jar:2.2.10-b140310.1920</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-bindings-xml:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-frontend-simple:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-ws-addr:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-ws-addr:jar:3.0.1/org.apache.cxf:cxf-rt-ws-policy:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxws:jar:3.0.1/org.apache.cxf:cxf-rt-ws-addr:jar:3.0.1/org.apache.cxf:cxf-rt-ws-policy:jar:3.0.1/org.apache.neethi:neethi:jar:3.0.3</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-transports-http:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxrs:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxrs:jar:3.0.1/javax.ws.rs:javax.ws.rs-api:jar:2.0</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-frontend-jaxrs:jar:3.0.1/javax.annotation:javax.annotation-api:jar:1.2</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-rs-client:jar:3.0.1</node>
+            <node x="" y="">org.apache.cxf:cxf-rt-rs-extension-providers:jar:3.0.1</node>
+            <node x="" y="">org.codehaus.jettison:jettison:jar:1.3.7</node>
+            <node x="" y="">org.codehaus.jettison:jettison:jar:1.3.7/stax:stax-api:jar:1.0.1</node>
+            <node x="" y="">com.alibaba:fastjson:jar:1.1.37</node>
+            <node x="" y="">com.colobu:fastjson-jaxrs-json-provider:jar:0.3.1</node>
+            <node x="" y="">com.colobu:fastjson-jaxrs-json-provider:jar:0.3.1/com.alibaba:fastjson:jar:1.2.7</node>
+            <node x="" y="">org.apache.struts:struts2-json-plugin:jar:2.3.24</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-plugin-api:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-project:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-profile:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-profile:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-artifact-manager:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-artifact-manager:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-project:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven.reporting:maven-reporting-api:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven.reporting:maven-reporting-api:jar:2.0.6/org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-2</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-2/org.codehaus.plexus:plexus-utils:jar:1.0.4</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-repository-metadata:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-repository-metadata:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-error-diagnostics:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/commons-cli:commons-cli:jar:1.0</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-descriptor:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4/classworlds:classworlds:jar:1.1-alpha-2</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-core:jar:2.0.6/classworlds:classworlds:jar:1.1</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-artifact:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-artifact:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-settings:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-settings:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-model:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-model:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven:maven-monitor:jar:2.0.6</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1/classworlds:classworlds:jar:1.1</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven.shared:maven-filtering:jar:1.1</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven.shared:maven-filtering:jar:1.1/org.codehaus.plexus:plexus-utils:jar:1.5.15</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven.shared:maven-filtering:jar:1.1/org.codehaus.plexus:plexus-interpolation:jar:1.12</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven.shared:maven-filtering:jar:1.1/org.sonatype.plexus:plexus-build-api:jar:0.0.4</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.apache.maven.shared:maven-filtering:jar:1.1/org.sonatype.plexus:plexus-build-api:jar:0.0.4/org.codehaus.plexus:plexus-utils:jar:1.5.8</node>
+            <node x="" y="">org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.6/org.codehaus.plexus:plexus-interpolation:jar:1.13</node>
+            <node x="" y="">com.belerweb:pinyin4j:jar:2.5.0</node>
+            <node x="" y="">javax.mail:mail:jar:1.3.2</node>
+            <node x="" y="">org.apache.xbean:xbean-spring:jar:3.7</node>
+            <node x="" y="">org.apache.xbean:xbean-spring:jar:3.7/commons-logging:commons-logging:jar:1.0.3</node>
+            <node x="" y="">org.quartz-scheduler:quartz:jar:2.2.1</node>
+            <node x="" y="">org.quartz-scheduler:quartz:jar:2.2.1/c3p0:c3p0:jar:0.9.1.1</node>
+            <node x="" y="">org.quartz-scheduler:quartz:jar:2.2.1/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.quartz-scheduler:quartz-jobs:jar:2.2.1</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-core:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-backward-codecs:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-analyzers-common:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-queries:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-memory:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-highlighter:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-queryparser:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-queryparser:jar:5.5.2/org.apache.lucene:lucene-sandbox:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-suggest:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-suggest:jar:5.5.2/org.apache.lucene:lucene-misc:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-join:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-join:jar:5.5.2/org.apache.lucene:lucene-grouping:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-spatial:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-spatial:jar:5.5.2/org.apache.lucene:lucene-spatial3d:jar:5.5.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.apache.lucene:lucene-spatial:jar:5.5.2/com.spatial4j:spatial4j:jar:0.5</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/com.google.guava:guava:jar:18.0</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.elasticsearch:securesm:jar:1.0</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/com.carrotsearch:hppc:jar:0.7.1</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/joda-time:joda-time:jar:2.9.4</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.joda:joda-convert:jar:1.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/com.fasterxml.jackson.core:jackson-core:jar:2.8.1</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/com.fasterxml.jackson.dataformat:jackson-dataformat-smile:jar:2.8.1</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.8.1</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:jar:2.8.1</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.yaml:snakeyaml:jar:1.15</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/io.netty:netty:jar:3.10.6.Final</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/com.ning:compress-lzf:jar:1.0.2</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/com.tdunning:t-digest:jar:3.0</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/org.hdrhistogram:HdrHistogram:jar:2.1.6</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/commons-cli:commons-cli:jar:1.3.1</node>
+            <node x="" y="">org.elasticsearch:elasticsearch:jar:2.4.0/com.twitter:jsr166e:jar:1.1.0</node>
+            <node x="" y="">org.springframework.data:spring-data-elasticsearch:jar:2.0.4.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-elasticsearch:jar:2.0.4.RELEASE/org.springframework.data:spring-data-commons:jar:1.12.4.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-elasticsearch:jar:2.0.4.RELEASE/org.elasticsearch:elasticsearch:jar:2.2.0</node>
+            <node x="" y="">org.springframework.data:spring-data-elasticsearch:jar:2.0.4.RELEASE/com.fasterxml.jackson.core:jackson-core:jar:2.6.7</node>
+            <node x="" y="">org.springframework.data:spring-data-elasticsearch:jar:2.0.4.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.6.7</node>
+            <node x="" y="">org.springframework.data:spring-data-elasticsearch:jar:2.0.4.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.6.7/com.fasterxml.jackson.core:jackson-annotations:jar:2.6.0</node>
+            <node x="" y="">org.springframework.data:spring-data-elasticsearch:jar:2.0.4.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.6.7/com.fasterxml.jackson.core:jackson-core:jar:2.8.1</node>
+            <node x="" y="">org.springframework.data:spring-data-elasticsearch:jar:2.0.4.RELEASE/org.slf4j:slf4j-api:jar:1.7.21</node>
+            <node x="" y="">com.lowagie:itext:jar:4.2.1</node>
+            <node x="" y="">com.lowagie:itext:jar:4.2.1/org.bouncycastle:bctsp-jdk14:jar:1.38</node>
+            <node x="" y="">com.lowagie:itext:jar:4.2.1/org.bouncycastle:bctsp-jdk14:jar:1.38/org.bouncycastle:bcprov-jdk14:jar:1.38</node>
+            <node x="" y="">com.lowagie:itext:jar:4.2.1/org.bouncycastle:bctsp-jdk14:jar:1.38/org.bouncycastle:bcmail-jdk14:jar:1.38</node>
+            <node x="" y="">com.lowagie:itext:jar:4.2.1/jfree:jfreechart:jar:1.0.12</node>
+            <node x="" y="">com.lowagie:itext:jar:4.2.1/jfree:jfreechart:jar:1.0.12/jfree:jcommon:jar:1.0.15</node>
+            <node x="" y="">com.lowagie:itext:jar:4.2.1/org.swinglabs:pdf-renderer:jar:1.0.5</node>
+            <node x="" y="">com.itextpdf:itext-asian:jar:5.2.0</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9098470484136013" x="534.0" y="2985.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Compile</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/pom.xml">
+    <entry file="file://$MAVEN_REPOSITORY$/com/colobu/fastjson-jaxrs-json-provider/0.3.1/fastjson-jaxrs-json-provider-0.3.1.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="321">
+          <caret line="88" column="26" lean-forward="false" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/InOutStorageInfo.java">
+    <entry file="file://$MAVEN_REPOSITORY$/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="298">
+          <caret line="115" column="18" lean-forward="false" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/InOutStorageInfoService.java">
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.11.0.RELEASE/spring-data-commons-1.11.0.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="367">
+          <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/TransitInfoService.java">
+    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/constant/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/impl/PromotionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="276">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/take_delivery/PromotionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="719" column="0" lean-forward="false" selection-start-line="719" selection-start-column="0" selection-end-line="719" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="92">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+    <entry file="file://$PROJECT_DIR$/common_parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+        <state relative-caret-position="7797">
+          <caret line="339" column="10" lean-forward="false" selection-start-line="339" selection-start-column="10" selection-end-line="339" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/take_delivery/Promotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.2.8.RELEASE/spring-tx-4.2.8.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <element signature="e#3928#3929#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="97" column="55" lean-forward="false" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.8.RELEASE/spring-core-4.2.8.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.8.RELEASE/spring-aop-4.2.8.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="654" column="0" lean-forward="false" selection-start-line="654" selection-start-column="0" selection-end-line="654" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/quartz/SyncIndexJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.2.1/quartz-2.2.1-sources.jar!/org/quartz/core/JobRunShell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.2.8.RELEASE/spring-tx-4.2.8.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="290" column="0" lean-forward="false" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="128">
+          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/TransitInfoAction.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/pages/base/fixed_area.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="63" column="15" lean-forward="true" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="299">
+          <caret line="55" column="53" lean-forward="true" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/InOutStorageInfoAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/InOutStorageInfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/report/ReportAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
-          <caret line="39" column="55" lean-forward="false" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/InOutStorageInfoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_domain/src/main/java/com/baidu/bos/domain/transit/TransitInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="53" column="57" lean-forward="true" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="e#1756#1757#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/DeliveryInfoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="83" lean-forward="false" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/DeliveryInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <caret line="125" column="20" lean-forward="false" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/DeliveryInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/DeliveryInfoAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/SignInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/dao/transit/SignInfoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/TransitInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="48" column="55" lean-forward="false" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/service/transit/impl/SignInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/java/com/baidu/bos/web/action/transit/SignInfoAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos_management/src/main/webapp/pages/transit/transitinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="130" column="31" lean-forward="true" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
-          <folding>
-            <element signature="e#1655#3003#0" expanded="false" />
-            <element signature="e#3166#4554#0" expanded="false" />
-            <element signature="e#6172#7642#0" expanded="false" />
-            <element signature="e#7941#10167#0" expanded="false" />
-            <element signature="e#10236#10693#0" expanded="false" />
-            <element signature="e#10776#10921#0" expanded="false" />
-            <element signature="e#11003#11144#0" expanded="false" />
-            <element signature="e#11219#11352#0" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2383,7 +2448,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>bos_domain</last-edited>
+          <last-edited>bos_sms</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2407,7 +2472,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.aliyun:aliyun-java-sdk-core:3.2.3</last-edited>
+          <last-edited>Maven: org.apache.activemq:activemq-all:5.2.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

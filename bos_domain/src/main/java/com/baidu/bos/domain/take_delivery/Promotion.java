@@ -10,8 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.apache.camel.language.Constant;
-
 import com.baidu.bos.domain.constant.Constants;
 
 /**

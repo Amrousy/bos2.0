@@ -5,6 +5,8 @@ import org.springframework.data.domain.Pageable;
 
 import com.baidu.bos.domain.take_delivery.WayBill;
 
+import java.util.List;
+
 public interface WayBillService {
 
 	// 保存运单
@@ -20,4 +22,7 @@ public interface WayBillService {
 
 	// 定时任务更新索引库
 	public void syncIndex();
+
+	// 查询所有的wayBill
+    List<WayBill> findWayBills(WayBill wayBill);
 }

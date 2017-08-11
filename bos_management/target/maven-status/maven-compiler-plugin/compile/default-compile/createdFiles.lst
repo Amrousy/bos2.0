@@ -2,6 +2,7 @@ com\baidu\bos\service\take_delivery\impl\PromotionServiceImpl.class
 com\baidu\bos\service\transit\impl\InOutStorageInfoServiceImpl.class
 com\baidu\bos\service\take_delivery\impl\WayBillServiceImpl.class
 com\baidu\bos\dao\transit\TransitInfoRepository.class
+com\baidu\bos\base\utils\FileUtils.class
 com\baidu\bos\service\take_delivery\impl\OrderServiceImpl.class
 com\baidu\bos\web\action\system\RoleAction.class
 com\baidu\bos\web\action\transit\TransitInfoAction.class
@@ -58,6 +59,7 @@ com\baidu\bos\web\action\take_delivery\ImageAction.class
 com\baidu\bos\dao\take_delivery\WayBillRepository.class
 com\baidu\bos\dao\take_delivery\OrderRepository.class
 com\baidu\bos\service\system\PermissionService.class
+com\baidu\bos\web\action\report\ReportAction.class
 com\baidu\bos\dao\transit\SignInfoRepository.class
 com\baidu\bos\dao\take_delivery\WorkBillRepository.class
 com\baidu\bos\dao\system\MenuRespository.class

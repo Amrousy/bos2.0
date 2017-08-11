@@ -5,10 +5,10 @@ public class Constants {
 	 * 常量工具类
 	 */
 	public static final String BOS_MANAGEMENT_HOST = "http://localhost:9001";
-	public static final String CRM_MANAGEMENT_HOST = "http://localhost:9002";
-	public static final String BOS_FORE_HOST = "http://localhost:9003";
-	public static final String BOS_SMS_HOST = "http://localhost:9004";
-	public static final String BOS_MAIL_HOST = "http://localhost:9005";
+	public static final String CRM_MANAGEMENT_HOST = "http://localhost:9001";
+	public static final String BOS_FORE_HOST = "http://localhost:9001";
+	public static final String BOS_SMS_HOST = "http://localhost:9001";
+	public static final String BOS_MAIL_HOST = "http://localhost:9001";
 
 	private static final String BOS_MANAGEMENT_CONTEXT = "/bos_management";
 	private static final String CRM_MANAGEMENT_CONTEXT = "/crm_management";

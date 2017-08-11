@@ -33,7 +33,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-dysmsapi:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-core:3.2.3" level="project" />
@@ -66,7 +66,7 @@
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.12.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.8.9" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:5.15.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:5.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.struts:struts2-core:2.3.24" level="project" />
     <orderEntry type="library" name="Maven: org.apache.struts.xwork:xwork-core:2.3.24" level="project" />
     <orderEntry type="library" name="Maven: asm:asm-commons:3.3" level="project" />
@@ -209,5 +209,13 @@
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-elasticsearch:2.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.7" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.lowagie:itext:4.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bctsp-jdk14:1.38" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk14:1.38" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcmail-jdk14:1.38" level="project" />
+    <orderEntry type="library" name="Maven: jfree:jfreechart:1.0.12" level="project" />
+    <orderEntry type="library" name="Maven: jfree:jcommon:1.0.15" level="project" />
+    <orderEntry type="library" name="Maven: org.swinglabs:pdf-renderer:1.0.5" level="project" />
+    <orderEntry type="library" name="Maven: com.itextpdf:itext-asian:5.2.0" level="project" />
   </component>
 </module>

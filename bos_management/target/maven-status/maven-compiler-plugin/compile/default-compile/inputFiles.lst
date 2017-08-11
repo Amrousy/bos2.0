@@ -4,6 +4,7 @@ D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baid
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\base\TakeTimeService.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\web\action\base\AreaAction.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\base\impl\TakeTimeServiceImpl.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\base\utils\FileUtils.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\system\UserService.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\web\action\transit\DeliveryInfoAction.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\transit\impl\TransitInfoServiceImpl.java
@@ -22,9 +23,13 @@ D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baid
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\system\impl\UserServiceImpl.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\take_delivery\PromotionService.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\base\impl\AreaServiceImpl.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\transit\SignInfoService.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\transit\impl\SignInfoServiceImpl.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\web\action\system\PermissionAction.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\web\action\transit\SignInfoAction.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\dao\base\TakeTimeRepository.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\take_delivery\impl\WayBillServiceImpl.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\web\action\report\ReportAction.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\system\impl\RoleServiceImpl.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\web\action\base\StandardAction.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\web\action\take_delivery\WayBillAction.java
@@ -51,6 +56,7 @@ D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baid
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\dao\system\MenuRespository.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\quartz\PromotionJob.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\take_delivery\impl\OrderServiceImpl.java
+D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\dao\transit\SignInfoRepository.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\service\base\impl\FixedAreaServiceImpl.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\web\action\common\BaseAction.java
 D:\IntelliJ IDEA 2017.1.4\workspace\bos2.0\bos_management\src\main\java\com\baidu\bos\dao\transit\TransitInfoRepository.java

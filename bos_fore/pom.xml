@@ -14,6 +14,7 @@
 	<description>物流前端系统</description>
 
 	<build>
+		<finalName>bos_fore</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>

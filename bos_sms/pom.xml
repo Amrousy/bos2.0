@@ -11,6 +11,7 @@
 	<name>bos_sms</name>
 	<description>bos系统统一短信平台</description>
 	<build>
+		<finalName>bos_sms</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
