@@ -29,7 +29,8 @@ public class SmsUtils {
 
 	// TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
 	static final String accessKeyId = "LTAIagcoAdCepVPR";
-	static final String accessKeySecret = "";//BXQBSMIIiwdcoFrSoi463nfJmJu1Ox
+	//BXQBSMIIiwdcoFrSoi463nfJmJu1Ox
+	static final String accessKeySecret = "";
 
 	public static SendSmsResponse sendSms(String randomCode,String telephone) throws ClientException {
 
