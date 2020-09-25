@@ -24,7 +24,7 @@ public class SmsUtils {
 
 	// master
 	public static final String ID = "LTAIagcoAdCepVPR";
-	public static final String SECRET = "BXQBSMIIiwdcoFrSoi463nfJmJu1Ox";
+	public static final String SECRET = "";
 
 	// 产品名称:云通信短信API产品,开发者无需替换
 	static final String product = "Dysmsapi";
