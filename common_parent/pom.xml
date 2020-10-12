@@ -23,7 +23,7 @@
         <c3p0.version>0.9.1.2</c3p0.version>
         <cxf.version>3.0.1</cxf.version>
         <servlet.version>2.5</servlet.version>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencies>
