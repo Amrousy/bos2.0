@@ -23,7 +23,7 @@ import com.aliyuncs.profile.IClientProfile;
 public class SmsUtils {
 
 	// master
-	public static final String ID = "LTAIagcoAdCepVPR";
+	public static final String ID = "";
 	public static final String SECRET = "";
 
 	// 产品名称:云通信短信API产品,开发者无需替换
