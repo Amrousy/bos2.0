@@ -19,7 +19,7 @@
         <shiro.version>1.2.2</shiro.version>
         <springdatajpa.version>1.10.4.RELEASE</springdatajpa.version>
         <jedis.version>2.6.2</jedis.version>
-        <poi.version>3.11</poi.version>
+        <poi.version>4.1.2</poi.version>
         <c3p0.version>0.9.1.2</c3p0.version>
         <cxf.version>3.0.1</cxf.version>
         <servlet.version>2.5</servlet.version>
